@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie List - Search</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <nav>
+          <span id="typing-text"></span>
+        </nav>
+      </div>
+
+      <div class="searchBar">
+        <input
+          type="text"
+          placeholder="search.."
+          id="search"
+          required
+          autocomplete="off"
+        />
+        <button><i class="bx bx-search" id="btn-search"></i></button>
+      </div>
+    </header>
+
+    <h1 class="found"></h1>
+
+    <div class="container-film">
+      <!-- <div class="card-film">
+        <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+                        title="The Avengers">
+        <h3>The Avengers</h3>
+      </div> -->
+    </div>
+    
+
+    <footer>
+      <div class="page">
+        <i class="bx bx-left-arrow-alt prev"></i>
+        <div class="page-number">1</div>
+        <i class="bx bx-right-arrow-alt next"></i>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</html>

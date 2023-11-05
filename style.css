@@ -1,0 +1,169 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #75746e;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  color: #333;
+  font-size: 10px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+
+.searchBar input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0; 
+  background-color: #75746e;
+  color: #333; 
+  text-align: center;
+  padding: 10px;
+  width: 100%; 
+  z-index: 100;
+}
+
+footer .page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#typing-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e9e1e1;
+  margin-left: 50px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 6em;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+
+button {
+  background-color: #949da7;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #678db5; 
+}
+
+.found {
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.container-film {
+  display: flex;
+  padding: 0px 80px;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 10px;
+  row-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.container-film img {
+  border: 0 black solid;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-film {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.card-film img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-film h3 {
+  position: absolute;
+  width: 180px;
+  top: 70%;
+  left: 50%;
+  font-size: medium;
+  padding: 10px;
+  text-align: center;
+  transition: opacity 0.3s;
+  pointer-events: none; 
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: rgba(65, 75, 79, 0.8);
+  border: 0 rgba(65, 75, 79, 0.8) solid;
+  color: #ffffff;
+}
+
+.card-film img:hover + h3, .card-film h3:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.bx-left-arrow-alt,
+.bx-right-arrow-alt {
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.bx-left-arrow-alt:hover,
+.bx-right-arrow-alt:hover {
+  color: #ffffff;
+}
+
