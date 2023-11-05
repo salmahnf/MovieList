@@ -1,3 +1,15 @@
+const text = "MOVIE";
+const typingText = document.getElementById("typing-text");
+
+function typeText(index) {
+  if (index < text.length) {
+    typingText.innerHTML += text.charAt(index);
+    setTimeout(() => typeText(index + 1), 200); // Ganti 200 dengan kecepatan mengetik yang diinginkan
+  }
+}
+
+typeText(0);
+
 const main = document.querySelector(".container-film");
 const apikey = "98f03ad5";
 
@@ -91,16 +103,3 @@ input.addEventListener("blur", () => {
   page.innerText = currentPage;
   OnChangeSearch(input.value, currentPage);
 });
-
-const text = "MOVIE";
-const typingText = document.getElementById("typing-text");
-
-function typeText(index) {
-  if (index < text.length) {
-    typingText.innerHTML += text.charAt(index);
-    setTimeout(() => typeText(index + 1), 200); // Ganti 200 dengan kecepatan mengetik yang diinginkan
-  }
-}
-
-typeText(0);
-
